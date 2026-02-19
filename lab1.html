@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Muhammad Bilal | Professional Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #f4f6f9;
+            color: #333;
+        }
+
+        header {
+            background: #0a192f;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            color: #64ffda;
+            font-size: 24px;
+        }
+
+        nav a {
+            color: #ccd6f6;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #64ffda;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 80px 8%;
+            flex-wrap: wrap;
+        }
+
+        .hero-text {
+            max-width: 550px;
+        }
+
+        .hero-text h2 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .hero-text span {
+            color: #0a192f;
+            font-weight: 700;
+        }
+
+        .hero-text p {
+            line-height: 1.6;
+            margin-bottom: 25px;
+            color: #555;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            background: #0a192f;
+            color: #fff;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #64ffda;
+            color: #0a192f;
+        }
+
+        .hero img {
+            width: 320px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        section {
+            padding: 70px 8%;
+        }
+
+        h3 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 28px;
+            color: #0a192f;
+        }
+
+        .about p {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+            line-height: 1.7;
+            color: #555;
+        }
+
+        .skills {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .skill-box {
+            background: #0a192f;
+            color: #fff;
+            padding: 12px 25px;
+            border-radius: 20px;
+            transition: 0.3s;
+        }
+
+        .skill-box:hover {
+            background: #64ffda;
+            color: #0a192f;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .project-card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        footer {
+            background: #0a192f;
+            color: #ccc;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        @media(max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero img {
+                margin-top: 30px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Muhammad Bilal</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h2>Hello, I'm <span>Muhammad Bilal</span></h2>
+        <p>
+            A professional Web Developer focused on building modern, responsive, 
+            and user-friendly websites. I create clean and efficient solutions 
+            that deliver real value.
+        </p>
+        <a href="#" class="btn">Download CV</a>
+    </div>
+
+    <!-- Profile Image with Link -->
+    <a href="https://unsplash.com/photos/man-in-black-suit-jacket-smiling-8manzosRGPE" target="_blank">
+        <img src="https://images.unsplash.com/photo-1603415526960-f7e0328b05e2" alt="Muhammad Bilal">
+    </a>
+</section>
+
+<section id="about" class="about">
+    <h3>About Me</h3>
+    <p>
+        I am a passionate developer with strong skills in HTML, CSS, and JavaScript. 
+        I enjoy transforming ideas into professional digital experiences. 
+        My goal is to continuously improve and deliver high-quality work.
+    </p>
+</section>
+
+<section id="skills">
+    <h3>Skills</h3>
+    <div class="skills">
+        <div class="skill-box">HTML5</div>
+        <div class="skill-box">CSS3</div>
+        <div class="skill-box">JavaScript</div>
+        <div class="skill-box">Responsive Design</div>
+        <div class="skill-box">UI/UX Basics</div>
+    </div>
+</section>
+
+<section id="projects">
+    <h3>Projects</h3>
+    <div class="projects">
+        <div class="project-card">
+            <h4>Business Website</h4>
+            <p>Modern responsive website for a local business.</p>
+        </div>
+        <div class="project-card">
+            <h4>Food Blog</h4>
+            <p>Clean and attractive food blogging platform design.</p>
+        </div>
+        <div class="project-card">
+            <h4>Portfolio Website</h4>
+            <p>Personal portfolio to showcase projects and skills.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h3>Contact</h3>
+    <p>Email: bilal@example.com</p>
+    <p>Phone: +92 300 1234567</p>
+</section>
+
+<footer>
+    © 2026 Muhammad Bilal | All Rights Reserved
+</footer>
+
+</body>
+</html>
